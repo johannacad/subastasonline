@@ -1,0 +1,30 @@
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+}
+.icon12 {
+    width: 12px;
+    height: 12px;
+}
+.icon16 {
+    width: 16px;
+    height: 16px;
+}
+.icon24 {
+    width: 24px;
+    height: 24px;
+}
+.icon32 {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-clock { background-image: url(../img/icons/icon-clock.svg); }
+.icon-heart { background-image: url(../img/icons/icon-heart.svg); }
+.icon-check { background-image: url(../img/icons/icon-check.svg); }
+.icon-close { background-image: url(../img/icons/icon-close.svg); }
+.icon-person { background-image: url(../img/icons/icon-person.svg); }
+.icon-warn { background-image: url(../img/icons/icon-warn.svg); }

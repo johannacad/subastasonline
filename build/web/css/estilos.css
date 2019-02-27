@@ -1,0 +1,153 @@
+/*
+COLORES
+1. Celeste claro: #F1F9FF
+2. Celeste oscuro: #BCE0FD
+3. Azul claro: #7FC4FD
+4. Azul oscuro: #2699FB
+*/
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.block {
+    display: block;
+}
+
+input[type=text], input[type=password] {
+    border: 1px solid #2699FB;
+    background: #BCE0FD;
+}
+
+/* BOTONES */
+.btn {
+    padding: 10px 16px;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    border: none;
+    border-radius: 3px;
+}
+.btn-outline {
+    border: 3px solid #2699FB;
+    color: #2699FB;
+}
+.btn-fill {
+    background: #2699FB;
+    color: #fff;
+}
+.btn.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/* TEXTOS */
+h1 {
+    font-size: 2em;
+}
+.text-center {
+    text-align: center;
+}
+a, a:visited {
+    color: #2699FB;
+    text-decoration: none;
+}
+/* MARGENES */
+.m5 {
+    margin: 5px;
+}
+.m10 {
+    margin: 10px;
+}
+.m20 {
+    margin: 20px;
+}
+
+/* CONTENEDORES */
+
+nav {
+    display: inline-block;
+}
+nav ul {
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+.grid-item-left {
+    grid-column: 1 span 8;
+}
+.grid-item-right {
+    grid-column: 9 span 3;
+}
+
+.title {
+    font-size: 1.32em;
+    font-weight: bold;
+    color: #2699FB;
+    display: inline-block;
+}
+.hero {
+    color: #2699FB;
+    background: #F1F9FF;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.hero .slogan {
+    font-size: 1.32em;
+    margin: 20px auto;
+}
+
+
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background: #7FC4FD;
+}
+footer p {
+    color: #fff;
+    text-align: right;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
