@@ -11,6 +11,7 @@ import entidades.subastas.com.Cliente;
 import java.sql.Connection;
 import java.sql.CallableStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Types;
 
 /**
@@ -34,16 +35,14 @@ public class ClienteDAO {
                         
             stmt.executeUpdate();
             System.out.println("ClienteDAO.guardar(): El registro fue guardado en la base de datos");
-        } catch (Exception e) {
+        } catch (SQLException e) {
             System.err.println(e.getMessage());
-            e.printStackTrace();
         } finally {
-            if (stmt != null) {
+            if (null != stmt) {
                 try {
                     stmt.close();                    
-                } catch (Exception e) {
+                } catch (SQLException e) {
                     System.err.println("Error intentando cerrar el CallableStatement:\n" + e.getLocalizedMessage());
-                    e.printStackTrace();
                 }
             }
         }
