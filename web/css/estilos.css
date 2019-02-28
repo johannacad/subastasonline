@@ -53,6 +53,10 @@ input[type=text], input[type=password] {
     border: 3px solid #2699FB;
     color: #2699FB;
 }
+.btn-outline-inverse {
+    border: 3px solid #fff;
+    color: #fff;
+}
 .btn-fill {
     background: #2699FB;
     color: #fff;
@@ -102,17 +106,12 @@ nav ul li{
     margin: 0 auto;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 16px;
-    grid-row-gap: 16px;
+
+.relative {
+    position: relative;
 }
-.grid-item-left {
-    grid-column: 1 span 8;
-}
-.grid-item-right {
-    grid-column: 9 span 3;
+.absolute {
+    position: absolute;
 }
 
 .title {

@@ -3,11 +3,16 @@ body {
 }
 .login-box {
     width: 420px;
-    margin: 20% auto;
     padding: 40px;
     background: #fff;
     border: 2px solid #2699FB;
     border-radius: 20px;
+}
+.login-box-margin {
+    margin: 20% auto;
+}
+.register-box-margin {
+    margin: 5% auto;
 }
 .login-box h2 {
     color: #2699FB;

@@ -21,6 +21,128 @@
 .producto .info .text {
     font-size: 12px;
 }
+.cell-info {
+    grid-area: info;
+}
+.cell-comments {
+    grid-area: comments;
+}
+.cell-subastas {
+    grid-area: subastas;
+}
+
+.product-page-grid {
+    display: grid;
+    grid-template-areas: "info comments"
+                        "subastas comments";
+    grid-template-columns: 8fr 4fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    justify-items: stretch;
+}
+
+
+.grid-product-info {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-column-gap: 20px;
+}
+.square .button-wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.product-subastas {
+    background: #7FC4FD;
+    padding: 20px;
+    color: #fff;
+}
+.product-subastas .block-subasta{
+    background: #fff;
+    color: #2699FB;
+    position: relative;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.product-subastas .block-subasta h4{
+    margin: 10px 0;
+}
+.product-subastas .block-subasta p{
+    margin: 10px 0;
+}
+.product-subastas .block-subasta .info{
+    margin-bottom: 20px;
+}
+.product-subastas .block-subasta .btn-ofertar{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+
+.product-comments {
+    background: #F1F9FF;
+    color: #2699FB;
+    padding: 20px 40px;
+}
+.product-comments .comment-form {
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+}
+.product-comments .comment-form h3{
+    font-size: 2.1em;
+    margin: 10px 0;
+}
+.product-comments .comment-form textarea{
+    display: block;
+    padding: 20px;
+    font-size: 14px;
+    width: 100%;
+    border-color: #fff;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+.product-comments .comment-form button{
+    background: none;
+    color: #2699FB;
+    margin-top: 10px;
+    float: right;
+}
+
+.product-comments .comment {
+    background: #7FC4FD;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.product-comments .comment .content blockquote{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: lighter;
+    quotes: "\201C""\201D""\2018""\2019";
+    margin: 10px 4px;
+}
+.product-comments .comment .content blockquote:before{
+    content: open-quote;
+}
+.product-comments .comment .content blockquote:after{
+    content: close-quote;
+}
+.product-comments .avatar figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+}
+
 
 
 @media (min-width: 480px) {
