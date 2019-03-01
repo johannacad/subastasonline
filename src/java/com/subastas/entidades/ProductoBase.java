@@ -10,17 +10,27 @@ package com.subastas.entidades;
  * @author Johanna
  */
 public class ProductoBase {
+    int idProductoBase;
     String nombre;
     String descripcion;
     String precioCompra;
     String precioVenta;
 
-    public ProductoBase(String nombre, String descripcion, String precioCompra, String precioVenta) {
+    public ProductoBase(int idProductoBase, String nombre, String descripcion, String precioCompra, String precioVenta) {
+        this.idProductoBase = idProductoBase;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precioCompra = precioCompra;
         this.precioVenta = precioVenta;
     }
+
+    public int getIdProductoBase() {
+        return idProductoBase;
+    }
+
+    public void setIdProductoBase(int idProductoBase) {
+        this.idProductoBase = idProductoBase;
+    }       
 
     public String getNombre() {
         return nombre;

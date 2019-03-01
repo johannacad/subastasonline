@@ -10,6 +10,7 @@ package com.subastas.entidades;
  * @author Johanna
  */
 public class Producto extends ProductoBase {
+    int idProducto;
     String color;
     String material;
     String unidadTalla;
@@ -19,8 +20,40 @@ public class Producto extends ProductoBase {
     String unidadAncho;
     int ancho;
 
-    public Producto(String nombre, String descripcion, String precioCompra, String precioVenta) {
-        super(nombre, descripcion, precioCompra, precioVenta);
+    public Producto(
+        int idProducto,
+        String color,
+        String material,
+        String unidadTalla,
+        int talla,
+        String unidadLargo,
+        int largo,
+        String unidadAncho,
+        int ancho,
+        int idProductoBase,
+        String nombre,
+        String descripcion,
+        String precioCompra,
+        String precioVenta
+    ) {
+        super(idProductoBase, nombre, descripcion, precioCompra, precioVenta);
+        this.idProducto = idProducto;
+        this.color = color;
+        this.material = material;
+        this.unidadTalla = unidadTalla;
+        this.talla = talla;
+        this.unidadLargo = unidadLargo;
+        this.largo = largo;
+        this.unidadAncho = unidadAncho;
+        this.ancho = ancho;
+    }
+
+    public int getIdProducto() {
+        return idProducto;
+    }
+
+    public void setIdProducto(int idProducto) {
+        this.idProducto = idProducto;
     }
 
     public String getColor() {
@@ -86,6 +119,4 @@ public class Producto extends ProductoBase {
     public void setAncho(int ancho) {
         this.ancho = ancho;
     }
-
-
 }

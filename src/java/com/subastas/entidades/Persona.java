@@ -10,6 +10,7 @@ package com.subastas.entidades;
  * @author Johanna
  */
 public class Persona {
+    int idPersona;
     String nombres;
     String apellidoPaterno;
     String apellidoMaterno;
@@ -17,12 +18,22 @@ public class Persona {
     String email;
     String fechaNacimiento;
 
-    public Persona(String nombres, String apellidoPaterno, String apellidoMaterno, String dni, String email) {
+    public Persona(int idPersona, String nombres, String apellidoPaterno, String apellidoMaterno, String dni, String email, String fechaNacimiento) {
+        this.idPersona = idPersona;
         this.nombres = nombres;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
         this.dni = dni;
         this.email = email;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    public void setIdPersona(int idPersona) {
+        this.idPersona = idPersona;
     }
 
     public String getNombres() {
@@ -72,7 +83,4 @@ public class Persona {
     public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-
-
-
 }

@@ -10,11 +10,36 @@ package com.subastas.entidades;
  * @author Johanna
  */
 public class Usuario extends Persona{
+    int idUsuario;
     String usuario;
     String password;
+    int idTipoUsuario;
 
-    public Usuario(String nombres, String apellidoPaterno, String apellidoMaterno, String dni, String email) {
-        super(nombres, apellidoPaterno, apellidoMaterno, dni, email);
+    public Usuario(
+            int idUsuario,
+            String usuario,
+            String password,
+            int idPersona,
+            int idTipoUsuario,
+            String nombres,
+            String apellidoPaterno,
+            String apellidoMaterno,
+            String dni, String email,
+            String fechaNacimiento
+    ) {
+        super(idPersona, nombres, apellidoPaterno, apellidoMaterno, dni, email, fechaNacimiento);
+        this.idUsuario = idUsuario;
+        this.usuario = usuario;
+        this.password = password;
+        this.idTipoUsuario = idTipoUsuario;
+    }
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     public String getUsuario() {
@@ -33,5 +58,11 @@ public class Usuario extends Persona{
         this.password = password;
     }
 
+    public int getIdTipoUsuario() {
+        return idTipoUsuario;
+    }
 
+    public void setIdTipoUsuario(int idTipoUsuario) {
+        this.idTipoUsuario = idTipoUsuario;
+    }
 }

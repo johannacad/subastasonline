@@ -73,7 +73,4 @@ public class Oferta {
     public void setMonto(String monto) {
         this.monto = monto;
     }
-
-
-
 }
