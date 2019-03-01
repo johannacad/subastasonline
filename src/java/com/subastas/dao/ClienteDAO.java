@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao.subastas.com;
+package com.subastas.dao;
 
-import conexion.subastas.com.Conexion;
-import entidades.subastas.com.Cliente;
+import com.subastas.conexion.Conexion;
+import com.subastas.entidades.Cliente;
 
 import java.sql.Connection;
 import java.sql.CallableStatement;

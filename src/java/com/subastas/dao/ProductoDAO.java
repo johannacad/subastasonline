@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dao.subastas.com;
+package com.subastas.dao;
 
 /**
  *
  * @author Johanna
  */
-public class OfertaDAO {
+public class ProductoDAO {
 
 }
